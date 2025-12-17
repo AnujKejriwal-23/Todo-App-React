@@ -1,16 +1,68 @@
-# React + Vite
+# Todo App (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple Todo application built with React and Vite. This app allows users to add, edit, and delete todo items with a clean and minimal interface.
 
-Currently, two official plugins are available:
+## Features
+- Add new todos
+- Edit existing todos
+- Delete todos
+- Simple and intuitive UI
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Folder Structure
+```
+├── public/
+├── src/
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   ├── main.jsx
+│   ├── TodoInput.jsx
+│   ├── TodoList.jsx
+│   └── assets/
+├── index.html
+├── package.json
+├── vite.config.js
+├── eslint.config.js
+└── README.md
+```
 
-## React Compiler
+## Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Prerequisites
+- Node.js (v14 or above recommended)
+- npm or yarn
 
-## Expanding the ESLint configuration
+### Installation
+1. Clone the repository:
+	```bash
+	git clone <repo-url>
+	cd Todo
+	```
+2. Install dependencies:
+	```bash
+	npm install
+	# or
+	yarn install
+	```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Running the App
+Start the development server:
+```bash
+npm run dev
+# or
+yarn dev
+```
+Open [http://localhost:5173](http://localhost:5173) to view it in your browser.
+
+## Usage
+- Type your todo in the input box and click **Add** to add a new todo.
+- Click **Edit** next to a todo to update it, then click **Update** to save changes.
+- Click **Delete** to remove a todo.
+
+## Built With
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+
+## License
+This project is open source and available under the [MIT License](LICENSE).
+
